@@ -18,10 +18,10 @@
   a#{$name} {
     &:focus,
     &:hover {
-      color: darken($color, 5%);
+      color: color.adjust($color, $lightness: -5%);
     }
     &:visited {
-      color: lighten($color, 5%);
+      color: color.adjust($color, $lightness: 5%);
     }
   }
 }

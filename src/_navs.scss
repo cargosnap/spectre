@@ -17,7 +17,7 @@
     }
     &.active {
       & > a {
-        color: darken($gray-color-dark, 10%);
+        color: color.adjust($gray-color-dark, $lightness: -10%);
         font-weight: bold;
         &:focus,
         &:hover {
