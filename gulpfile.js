@@ -1,5 +1,6 @@
-const gulp = require("gulp");
+const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+
 const cleancss = require('gulp-clean-css');
 const csscomb = require('gulp-csscomb');
 const rename = require('gulp-rename');
@@ -8,9 +9,7 @@ const autoprefixer = require('gulp-autoprefixer');
 function build() {
   return gulp
     .src('./src/*.scss')
-    .pipe(sass({ precision: 10 })
-      .on('error', sass.logError)
-    )
+    .pipe(sass({ silenceDeprecations: ['legacy-js-api'] }).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(csscomb())
     .pipe(gulp.dest('./dist'))
