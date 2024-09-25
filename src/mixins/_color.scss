@@ -1,9 +1,11 @@
+@use 'sass:color';
+
 // Background color utility mixin
 @mixin bg-color-variant($name: ".bg-primary", $color: $primary-color) {
   #{$name} {
     background: $color !important;
 
-    @if (lightness($color) < 60) {
+    @if (color.channel($color, "lightness", $space: hsl) < 60) {
       color: $light-color;
     }
   }

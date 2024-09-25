@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 // Core variables
 $version: "0.5.9";
 
@@ -30,6 +32,7 @@ $bg-color-light: $light-color !default;
 $success-color: #32b643 !default;
 $warning-color: #ffb700 !default;
 $error-color: #e85600 !default;
+$sand-color: #f8f6f2 !default;
 
 // Other colors
 $code-color: #d73e48 !default;

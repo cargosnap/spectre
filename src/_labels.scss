@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 // Labels
 .label {
   @include label-base();
