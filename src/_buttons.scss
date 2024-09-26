@@ -120,21 +120,6 @@
 		width: 100%;
 	}
 
-	// Button Action
-	&.btn-action {
-		width: $control-size;
-		padding-left: 0;
-		padding-right: 0;
-
-		&.btn-sm {
-			width: $control-size-sm;
-		}
-
-		&.btn-lg {
-			width: $control-size-lg;
-		}
-	}
-
 	// Button Clear
 	&.btn-clear {
 		background: transparent;
